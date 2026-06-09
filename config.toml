@@ -1,0 +1,63 @@
+[plugin]
+enabled = false
+config_version = "1.2.0"
+version = "1.2.0"
+
+[scheduler]
+enabled = true
+start_time = "08:00"
+end_time = "23:00"
+check_interval = 30
+jitter = 3
+probability = 0.7
+min_interval_between_chats = 60
+isolation_time = 0
+
+[target]
+allowed_groups = []
+allowed_friends = ["12345678"]
+
+[topic]
+topic_source = "history"
+mixed_history_weight = 1.0
+mixed_knowledge_weight = 1.0
+mixed_preset_weight = 1.0
+
+[topic.history]
+recent_message_count = 15
+recent_hours = 24
+
+[topic.preset]
+topics = [
+    "游戏",
+    "美食",
+    "动漫",
+    "最近的新闻",
+    "天气",
+    "音乐",
+]
+allow_free_play = true
+topic_weights = []
+
+[message]
+show_current_time = false
+time_format = "%H:%M"
+time_prefix_template = ""
+
+[log]
+verbose = true
+scheduler_log = true
+
+[llm]
+model_name = "replyer"
+max_tokens = 200
+
+[persona]
+speak_style = ""
+
+[prompt]
+history_intro = "你是 {nick}, {persona}. 有一段时间没有发消息了, 你决定做些什么."
+preset_intro = "你是 {nick}, {persona}. 现在聊天里冷场了, 你想发条消息活跃一下."
+knowledge_intro = "你是 {nick}, {persona}. 现在聊天里冷场了, 你想发条消息活跃一下."
+
+#注意{nick}, {persona}不要去掉,或按照需求更改

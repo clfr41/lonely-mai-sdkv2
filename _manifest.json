@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "version": "1.2.0",
+  "name": "怕寂寞的麦麦 (LonelyMai)",
+  "description": "让 AI 在群里冷场时主动找话题聊天，基于历史、知识库或预置话题，支持白名单与概率控制",
+  "author": {
+    "name": "海菜汤 & RIEZ-ON",
+    "url": "https://github.com/clfr41"
+  },
+  "license": "GPL-v3.0-or-later",
+  "urls": {
+    "repository": "https://github.com/clfr41/lonely-mai-sdkv2",
+    "homepage": "https://github.com/clfr41/lonely-mai-sdkv2",
+    "issues": "https://github.com/clfr41/lonely-mai-sdkv2/issues"
+  },
+  "host_application": {
+    "min_version": "1.0.0",
+    "max_version": "1.99.99"
+  },
+  "sdk": {
+    "min_version": "2.3.0",
+    "max_version": "2.99.99"
+  },
+  "dependencies": [],
+  "capabilities": [
+    "chat.get_stream_by_group_id",
+    "chat.get_stream_by_user_id",
+    "message.get_by_time_in_chat",
+    "config.get",
+    "llm.generate",
+    "send.text"
+  ],
+  "i18n": {
+    "default_locale": "zh-CN",
+    "supported_locales": ["zh-CN"]
+  },
+  "id": "NothingButSeaweedSoup.LonelyMai"
+}
