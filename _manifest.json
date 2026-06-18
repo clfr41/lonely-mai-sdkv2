@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "version": "1.2.0",
-  "name": "怕寂寞的麦麦 (LonelyMai)",
+  "name": "怕寂寞的麦麦 (LonelyMai) sdkv2",
   "description": "让 AI 在群里冷场时主动找话题聊天，基于历史、知识库或预置话题，支持白名单与概率控制",
   "author": {
     "name": "海菜汤 & RIEZ-ON",
